@@ -95,19 +95,22 @@ tw-sidebar {
 
 
 
+/*
+	TABLET-SPECIFIC RULES / SMALL WIDTH BROWSERS
+*/
+
+
 <div class="global-css">
 <div class="ignore-css">
 <div class="important-css">
 
 
-/*
-	TABLET-SPECIFIC RULES / SMALL WIDTH BROWSERS
-*/
+
 @media only screen and (min-width: 401px) and (max-width: 960px) {
 
   tw-story {
 	background-image: none;
-	max-height: 100%;
+	height: 100%;
 	  font-size: 1.3em;
 	  width: 100%;
 	
@@ -120,7 +123,7 @@ tw-sidebar {
 	Butões */
   
 
-  tw-hook[name="esq"] tw-link, tw-hook[name="esq"] .enchantment-link {
+    tw-hook[name="esq"] tw-link, tw-hook[name="esq"] .enchantment-link {
 	box-shadow:0 0 2px #3BD842;
 	background-color:#000000;
 	border:2px solid #3BD842;
@@ -134,9 +137,10 @@ tw-sidebar {
 	width:50vw;
     height: 100vh;
     position: absolute; 
-	float: left;
-	margin-left:0
-	margin-top:0
+	margin-left:3px;
+	margin-top:3px;
+	margin-bottom: 3px
+	 
 	box-sizing: border-box;
    z-index: 0;
   }
@@ -156,7 +160,7 @@ tw-sidebar {
 	background-image: none;
 	  font-size: 1.0em;
 	  width: 100vw;
-	max-height: 100vh;
+	height: 100vh;
   }
 
   tw-passage {
@@ -178,12 +182,14 @@ tw-sidebar {
 	width:50vw;
     height: 100vh;
     position: absolute; 
-	float: left;
-	margin-left:0
-	margin-top:0
+	margin-left:3px;
+	margin-top:3px;
+	margin-bottom: 3px
+	 
 	box-sizing: border-box;
    z-index: 0;
   }
+  
 </div>
 </div>
 </div>
